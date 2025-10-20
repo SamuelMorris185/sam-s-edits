@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Samuel Morris | Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxD7z1QBmQa6zlmK8t2uQ6Xo8X5YxCzE+Fr5FynZ6pXc3Qf4Z8Zhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div id="cursor"></div>
+	<header class="hero" id="home">
+		<canvas id="particle-canvas"></canvas>
+		<nav class="navbar">
+			<div class="logo">SM<span>.</span></div>
+			<button class="nav-toggle" aria-label="Toggle navigation">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<ul class="nav-links">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<section class="hero-content">
+			<div class="intro pulse-glow">
+				<p class="intro__greeting">// welcome to my realm</p>
+				<h1 class="intro__name">Samuel Morris</h1>
+				<h2 class="intro__title">Aspiring Software Engineer</h2>
+				<p class="intro__tagline" data-words='["Building ideas into reality","Crafting futuristic experiences","Designing resilient solutions"]'>
+					<span class="typed-text"></span><span class="cursor">_</span>
+				</p>
+			</div>
+			<div class="hero-actions">
+				<a href="#projects" class="btn btn-primary">Explore Work</a>
+				<a href="#" class="btn btn-outline" download>Download Resume</a>
+			</div>
+			<div class="social-links">
+				<a class="contact-btn" href="https://www.linkedin.com/in/samuel-morris-b27135356/" target="_blank" rel="noopener">
+					<i class="fa-brands fa-linkedin"></i><span class="contact-label">LinkedIn</span>
+				</a>
+				<a class="contact-btn" href="https://github.com/SamuelMorris185" target="_blank" rel="noopener">
+					<i class="fa-brands fa-github"></i><span class="contact-label">GitHub</span>
+				</a>
+				<a class="contact-btn" href="https://www.instagram.com/___.spidy.___180/" target="_blank" rel="noopener">
+					<i class="fa-brands fa-instagram"></i><span class="contact-label">Instagram</span>
+				</a>
+			</div>
+		</section>
+		<div class="hero-lines">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</header>
+	<main>
+		<section id="about" class="section about">
+			<div class="section-heading">
+				<h2>About Me</h2>
+				<div class="divider"></div>
+				<p>Who I am &amp; what drives me</p>
+			</div>
+			<div class="about-grid">
+				<div class="about-photo">
+					<div class="photo-frame">
+						<div class="profile-avatar"><img class="profile-avatar-img" src="sam.jpg" alt="Samuel Morris"></div>
+					</div>
+				</div>
+				<div class="about-content">
+					<p><!-- Bio -->I’m Samuel Morris, an aspiring software engineer focused on sculpting immersive digital experiences with performance, accessibility, and aesthetics in mind. I enjoy bridging creative storytelling with resilient engineering patterns.</p>
+					<p><!-- Education -->Currently pursuing a B.E. in Computer Science at Stella Maris College of , I dive deep into full stack development, cloud-native architectures, and human-centered design.</p>
+					<p><!-- Mission -->My mission is to transform ambitious ideas into delightful realities — whether through rapid prototypes, production-ready systems, or collaborative innovation.</p>
+				</div>
+			</div>
+		</section>
+		<section id="skills" class="section skills">
+			<div class="section-heading">
+				<h2>Skills Arsenal</h2>
+				<div class="divider"></div>
+				<p>Technologies I deploy with precision</p>
+			</div>
+			<div class="skills-grid">
+				<div class="skill-card">
+					<i class="fab fa-html5"></i>
+					<h3>HTML5</h3>
+				</div>
+				<div class="skill-card">
+					<i class="fab fa-css3-alt"></i>
+					<h3>CSS3</h3>
+				</div>
+				<div class="skill-card">
+					<i class="fab fa-js-square"></i>
+					<h3>JavaScript</h3>
+				</div>
+				<div class="skill-card">
+					<i class="fab fa-python"></i>
+					<h3>Python</h3>
+				</div>
+				<div class="skill-card">
+					<img src="https://img.icons8.com/color/48/flutter.png" alt="Flutter icon" />
+					<h3>Flutter</h3>
+				</div>
+				<div class="skill-card">
+					<img src="https://img.icons8.com/color/48/firebase.png" alt="Firebase icon" />
+					<h3>Firebase</h3>
+				</div>
+				<div class="skill-card">
+					<i class="fab fa-github"></i>
+					<h3>GitHub</h3>
+				</div>
+			</div>
+		</section>
+		<section id="projects" class="section projects">
+			<div class="section-heading">
+				<h2>Featured Projects</h2>
+				<div class="divider"></div>
+				<p>Selected builds showcasing my craft</p>
+			</div>
+			<div class="projects-grid">
+				<article class="project-card">
+					<div class="project-image">
+						<img src="https://via.placeholder.com/480x300.png?text=Project+Nova" alt="Project Nova preview" />
+					</div>
+					<div class="project-content">
+						<h3>Project Nova</h3>
+						<p>Immersive analytics dashboard blending real-time insights with cinematic UI transitions.</p>
+						<div class="project-actions">
+							<a class="btn btn-primary" href="https://example.com/project-nova" target="_blank" rel="noopener">View Project</a>
+							<a class="btn btn-outline" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+						</div>
+					</div>
+				</article>
+				<article class="project-card">
+					<div class="project-image">
+						<img src="https://via.placeholder.com/480x300.png?text=Pulse+App" alt="Pulse App preview" />
+					</div>
+					<div class="project-content">
+						<h3>Pulse App</h3>
+						<p>Cross-platform wellness companion built with Flutter and Firebase for seamless engagement.</p>
+						<div class="project-actions">
+							<a class="btn btn-primary" href="https://example.com/pulse-app" target="_blank" rel="noopener">View Project</a>
+							<a class="btn btn-outline" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+						</div>
+					</div>
+				</article>
+				<article class="project-card">
+					<div class="project-image">
+						<img src="https://via.placeholder.com/480x300.png?text=Helix+AI" alt="Helix AI preview" />
+					</div>
+					<div class="project-content">
+						<h3>Helix AI</h3>
+						<p>Conversational AI prototype integrating adaptive learning paths and voice-driven interaction.</p>
+						<div class="project-actions">
+							<a class="btn btn-primary" href="https://example.com/helix-ai" target="_blank" rel="noopener">View Project</a>
+							<a class="btn btn-outline" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+		<section id="contact" class="section contact">
+			<div class="section-heading">
+				<h2>Let’s Collaborate</h2>
+				<div class="divider"></div>
+				<p>Drop a message and let’s build the future together</p>
+			</div>
+			<div class="contact-wrapper">
+				<form class="contact-form">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" placeholder="Your name" required />
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" placeholder="you@example.com" required />
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+					<button type="submit" class="btn btn-primary btn-ripple">Send Message</button>
+				</form>
+				<div class="contact-info">
+					<div class="info-block">
+						<i class="fas fa-envelope"></i>
+						<a href="mailto:samuel.morris@example.com">samuel.morris@example.com</a>
+					</div>
+					<div class="info-block">
+						<i class="fas fa-map-marker-alt"></i>
+						<p>Atlanta, GA · Open to remote opportunities</p>
+					</div>
+					<div class="info-block">
+						<i class="fas fa-clock"></i>
+						<p>Available weekdays · 9AM — 6PM EST</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<p>© <span id="year"></span> Samuel Morris. Crafted with passion &amp; precision.</p>
+		<div class="footer-social">
+			<a href="https://github.com/" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+			<a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+		</div>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
