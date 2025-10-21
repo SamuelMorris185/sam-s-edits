@@ -229,8 +229,38 @@ section {
 .hero-actions {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	gap: 1.5rem;
 	flex-wrap: wrap;
+	width: 100%;
+	max-width: 820px;
+	margin: 0 auto;
+}
+
+/* ensure buttons have a sensible minimum so layout stays balanced */
+.hero-actions .btn {
+	min-width: 180px;
+}
+
+/* medium screens: slightly smaller buttons */
+@media (max-width: 992px) {
+	.hero-actions .btn {
+		min-width: 140px;
+	}
+}
+
+/* small screens: stack and make buttons full width */
+@media (max-width: 600px) {
+	.hero-actions {
+		flex-direction: column;
+		gap: 0.75rem;
+		padding: 0 1rem;
+	}
+	.hero-actions .btn {
+		min-width: 0;
+		width: 100%;
+		padding: 0.85rem 1rem;
+	}
 }
 
 .btn {
@@ -371,7 +401,7 @@ section {
 	padding: 18px;
 	border-radius: 50%;
 	background: radial-gradient(circle, rgba(240, 199, 94, 0.5), rgba(240, 199, 94, 0.05));
-	animation: rotateGlow 6s linear infinite;
+
 }
 
 .photo-frame img {
@@ -380,14 +410,7 @@ section {
 	box-shadow: 0 0 30px rgba(240, 199, 94, 0.4);
 }
 
-@keyframes rotateGlow {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
+
 
 .about-content p {
 	margin-bottom: 1.4rem;
