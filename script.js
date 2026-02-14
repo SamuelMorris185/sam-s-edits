@@ -9,6 +9,16 @@ const typedContainer = document.querySelector(".intro__tagline");
 const typedText = document.querySelector(".typed-text");
 const canvas = document.getElementById("particle-canvas");
 const ctx = canvas.getContext("2d");
+const navbar = document.querySelector(".navbar");
+
+// Navbar scroll effect
+window.addEventListener("scroll", () => {
+	if (window.scrollY > 50) {
+		navbar.classList.add("scrolled");
+	} else {
+		navbar.classList.remove("scrolled");
+	}
+});
 
 // Responsive navigation toggle
 navToggle?.addEventListener("click", () => {
